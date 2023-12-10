@@ -1,0 +1,30 @@
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.all_section_margin {
+  margin: 150px 10px;
+  @include respond(large-desktop) {
+    margin: 100px 10px 50px 10px;
+  }
+}
+.all_section_margin_less {
+  margin: 100px 10px;
+}
+.small-padding {
+  padding: 20px;
+}
+.all-btn {
+  padding: 15px 25px;
+  border: 2px solid #0b5ed7;
+  background-color: white;
+  font-size: $nav-font-size;
+  border-radius: 10px;
+  &:hover {
+    background-color: #0b5ed7;
+    color: white;
+  }
+}

@@ -1,0 +1,23 @@
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animation";
+@import "base/base";
+@import "base/utilities";
+
+@import "components/nav";
+@import "components/covidCard";
+@import "components/covidSpreadCard";
+@import "components/help";
+@import "components/footer";
+@import "components/medicineProductCard";
+@import "components/loader";
+@import "components/hideShow";
+@import "components/cartIcons";
+@import "components/cartTable";
+
+@import "pages/home";
+@import "pages/prevention";
+@import "pages/product";
+@import "pages/api";
+@import "pages/contact";

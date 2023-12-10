@@ -1,0 +1,65 @@
+.help {
+  display: inline-block;
+  background-color: $color-smoke-blue;
+  border-radius: $border-radius;
+  padding: 0px 20px;
+  width: 100%;
+  @include respond(big-desktop) {
+    width: 90%;
+  }
+  .row {
+    @include respond(big-desktop) {
+      padding: 20px 10px;
+    }
+  }
+  &__col1 {
+    @include flex_4_covid_text;
+    @include respond(medium-desktop) {
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    padding-left: 4rem;
+    h1 {
+      font-size: $covid-card-text-size;
+      @include respond(large-desktop) {
+        $covid-card-text-size: 3rem;
+        font-size: $covid-card-text-size;
+      }
+      @include respond(small-phone) {
+        $covid-card-text-size: 2rem;
+        font-size: $covid-card-text-size;
+      }
+    }
+    p {
+      font-size: 1.6rem;
+      width: 80%;
+      line-height: 40px;
+      @include respond(large-desktop) {
+        width: 100%;
+      }
+      @include respond(medium-desktop) {
+        text-align: center;
+      }
+    }
+  }
+  &__col2 {
+    @include respond(large-desktop) {
+      display: flex;
+      justify-content: center;
+      align-items: end;
+    }
+    img {
+      border-radius: $border-radius;
+      @include respond(large-desktop) {
+        width: 400px;
+      }
+      @include respond(small-phone) {
+        width: 300px;
+      }
+      @include respond(extra-small-phone) {
+        width: 250px;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.covid_case__card {
+  @include flex_3_row_spaceEqual;
+  &--A {
+    padding: 20px 20px;
+    @include respond(small-phone) {
+      padding: 20px 10px;
+    }
+    &:not(:last-child) {
+      border-right: 1px solid rgb(219, 217, 217);
+    }
+    h1 {
+      color: $color-light-black;
+      text-align: center;
+      font-size: $covid-card-text-size;
+    }
+    p {
+      text-align: center;
+      font-size: $nav-font-size;
+    }
+  }
+}

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Medicine Product | API | Website</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo1.jpg" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="preloader"></div>
+    <nav class="main navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/LOGO.svg" /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./prevention.html">Prevention</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./product.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./api.html">Covid-API</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+            <li class="nav-item cartLogo">
+              <a class="position-relative" href="./cart.html"
+                ><span
+                  class="position-absolute -top-9 start-100 translate-middle badge rounded-pill bg-danger cart_Add_Product_count"
+                >
+                  0
+                  <span class="visually-hidden">unread messages</span> </span
+                ><img src="./img/logo.png" alt=""
+              /></a>
+            </li>
+            <li class="nav-item">
+              <button style="cursor: not-allowed" class="style_btn">
+                Emergency Call
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="">
+      <div class="main header_section">
+        <div class="row">
+          <div class="col-12 col-md-6 mycol-1">
+            <h1>Save yourself</h1>
+            <h1>Save each other</h1>
+            <p>
+              Mauris pellentesque gravida amet dui tempor, diam nam sed eget
+              semper ultrices tristique nibh id nec quam vestibulum consectetur
+              ut lacus neque, scelerisque cras.
+            </p>
+            <div class="btn_text">
+              <a href="./product.html"
+                ><button class="style_btn2">Buy Medicine</button></a
+              >
+              <h4>+9416521069</h4>
+            </div>
+          </div>
+          <div class="col mycol-2">
+            <img class="mycol-2--img" src="img/header.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="">
+      <div class="main covid_case">
+        <div class="covid_case__card">
+          <div class="covid_case__card--A">
+            <h1>208</h1>
+            <p>AFFECTED COUNTRIES</p>
+          </div>
+          <div class="covid_case__card--A">
+            <h1>2,567</h1>
+            <p>CONFIRMED CASES</p>
+          </div>
+          <div class="covid_case__card--A">
+            <h1>512,1</h1>
+            <p>RECOVERED CASES</p>
+          </div>
+          <div class="covid_case__card--A">
+            <h1>32,256</h1>
+            <p>WORLDWIDE DEATHS</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main">
+      <div class="covid19_info all_section_margin">
+        <div class="row">
+          <div class="col-12 col-md-6 row__col-1 rotate_img">
+            <img src="./img/covid-19-virus.png" alt="" />
+          </div>
+          <div class="col-12 col-md-6 row__col-2">
+            <h4 class="text-primary">ABOUT COVID-19</h4>
+            <h1>What is COVID-19?</h1>
+            <p>
+              Eu, lectus in porttitor integer aliquam integer nisl cras eget
+              lectus etiam viverra vestibulum cursus ullamcorper ullamcorper
+              nisl faucibus nullam diam tincidunt ut velit. Venenatis sodales
+              lectus feugiat et nec, quis consectetur cras diam quis euismod sit
+              lorem gravida lectus ullamcorper eget dictum imperdiet mauris,
+              velit, fermentum aenean pellentesque iaculis quis etiam elementum
+              potenti quis enim.
+            </p>
+            <a
+              target="_blank"
+              href="https://www.who.int/health-topics/coronavirus#:~:text=More-,Overview,recover%20without%20requiring%20special%20treatment."
+              ><button class="style_btn2">More Info</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main">
+      <div class="covid_video">
+        <video controls autoplay muted loop>
+          <source src="./img/video.mp4" />
+        </video>
+        <div class="covid_video--img rotate_img">
+          <img src="./img/covid-19-virus.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="main">
+      <div class="covid_spread all_section_margin small-padding">
+        <div class="row">
+          <div class="col-12 col-lg-6 row__col-1">
+            <div class="box1">
+              <div class="covid_spread__card">
+                <img src="./img/covid90.avif" alt="" />
+                <img src="./img/covid91.avif" alt="" />
+              </div>
+            </div>
+            <div class="box1">
+              <div class="covid_spread__card modify_spread_card">
+                <img src="./img/covid92.avif" alt="" />
+                <img src="./img/covid94.avif" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col row__col-2">
+            <h4 class="text-primary">ABOUT COVID-19</h4>
+            <h1>What is COVID-19?</h1>
+            <p>
+              Eu, lectus in porttitor integer aliquam integer nisl cras eget
+              lectus etiam viverra vestibulum cursus ullamcorper ullamcorper
+              nisl faucibus nullam diam tincidunt ut velit. Venenatis sodales
+              lectus feugiat et nec, quis consectetur cras diam quis euismod sit
+              lorem gravida lectus ullamcorper eget dictum imperdiet mauris,
+              velit, fermentum aenean pellentesque iaculis quis etiam elementum
+              potenti quis enim.
+            </p>
+            <a href="./prevention.html"
+              ><button class="style_btn2">Check Symptoms</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main">
+      <div class="protect">
+        <h4 class="text-primary text-center">ABOUT COVID-19</h4>
+        <h1>Take steps to protect yourself</h1>
+        <p>
+          Nec habitasse sociis urna urna dignissim et ac parturient sed mi
+          ultricies porttitor ligula eu elementum arcu leo, cum tellus
+          suspendisse dignissim habitant pellentesque.Nec habitasse sociis urna
+          urna dignissim et ac parturient sed mi ultricies porttitor ligula eu
+          elementum arcu leo, cum tellus suspendisse dignissim.
+        </p>
+      </div>
+    </section>
+    <section class="main">
+      <div class="help">
+        <div class="row">
+          <div class="col-12 col-md-6 help__col1">
+            <h4 class="text-primary">NEED HELP?</h4>
+            <h1>We are here to help.</h1>
+            <p>Vitae, vulputate lorem id egestas neque egestas.</p>
+            <a href="./contact.html">
+              <button class="style_btn2">Contact us now</button></a
+            >
+          </div>
+          <div class="col-12 col-md-6 help__col2">
+            <img src="./img/help.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="main myfooter">
+        <div class="myfooter__box1">
+          <img class="mb-5" src="img/logo-light.svg" />
+          <ul>
+            <h1>Health Problems</h1>
+            <p>Stroke</p>
+            <p>HIV</p>
+            <p>Depression</p>
+            <p>Heart Disease</p>
+          </ul>
+          <ul>
+            <h1>Quick Link</h1>
+            <p>World Meter</p>
+            <p>WHO Information</p>
+            <p>Health Issues</p>
+            <p>Email: pardeepnain1111@gmail.com</p>
+          </ul>
+          <ul>
+            <h1>Contact Info</h1>
+            <p>🏡 #1385F sector=11, panchkula, India</p>
+            <p>📞 9416521069</p>
+            <p>🗺 India</p>
+            <p>💌 Email: pardeepnain1111@gmail.com</p>
+          </ul>
+        </div>
+        <hr />
+        <h5 class="text-center m-0 pb-3">
+          Made by : Pardeep kumar | 2024-2025
+        </h5>
+      </div>
+    </footer>
+    <script src="./javascript/style.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

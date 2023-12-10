@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="main navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/LOGO.svg" /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./prevention.html">Prevention</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./product.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./api.html">Covid-API</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+            <li class="nav-item cartLogo">
+              <a class="position-relative" href="#"
+                ><span
+                  class="cart_Add_Product_count position-absolute -top-9 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                  0
+                  <span class="visually-hidden">unread messages</span> </span
+                ><img src="./img/logo.png" alt=""
+              /></a>
+            </li>
+            <li class="nav-item">
+              <button style="cursor:not-allowed" class="style_btn">Emergency Call</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="main">
+    <section class="table_container">
+      <h1 class="table_container__heading text-center">Medicines Cart</h1><br>
+      <table class=" table">
+        <form action="">
+          <button type="submit" class="clearCart style_btn2 text-center my-5 mx-3">Clear Cart</button>
+        </form>
+        <thead>
+          <tr class="blurCartHeader ">
+            <th scope="col"></th>
+            <th scope="col">Product Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Total</th>
+          </tr>
+     
+        </thead>                          
+        <tbody class="table_body_new">
+          <!--wwwwwwwwwwwwww-->
+        </tbody>
+        </tbody>
+      </table>
+    </section>
+  </section>
+    <section class="">
+      <div class="loader_add_cart ">
+
+      </div>
+      <div class="main cartEmpty_logo  ">
+        <img src="./img/cartempty.svg" alt="">   
+      </div>  
+      <div class="main checkout">
+        <div class="checkout__section">
+          <h1
+            style="background-color: rgb(228, 225, 225)"
+            class="text-center rounded-5 p-2 text-dark-emphasis"
+          >
+            Cart Total
+          </h1>
+          <hr />
+          <div>
+            <h1 class="my-4 text-danger">Total = <span class="cartTotalPrice"> 0</span> Rs</h1>
+
+            <div class="input-group mb-5">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Coupon Code"
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+              />
+              <span class="btn btn-warning input-group-text text-light" id="basic-addon2"
+                >Apply</span
+              >
+            </div>
+            <button style="cursor:not-allowed" class="btn btn-warning">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="main">
+      <div class="protect">
+        <h4 class="text-primary text-center">ABOUT COVID-19</h4>
+        <h1>Take steps to protect yourself</h1>
+        <p>
+          Nec habitasse sociis urna urna dignissim et ac parturient sed mi
+          ultricies porttitor ligula eu elementum arcu leo, cum tellus
+          suspendisse dignissim habitant pellentesque.Nec habitasse sociis urna
+          urna dignissim et ac parturient sed mi ultricies porttitor ligula eu
+          elementum arcu leo, cum tellus suspendisse dignissim.
+        </p>
+      </div>
+    </div>
+    <section class="main">
+      <div class="help">
+        <div class="row">
+          <div class="col help__col1">
+            <h4 class="text-primary">NEED HELP?</h4>
+            <h1>We are here to help.</h1>
+            <p>Vitae, vulputate lorem id egestas neque egestas.</p>
+            <a href="./contact.html">
+              <button class="style_btn2">Contact us now</button></a
+            >
+          </div>
+          <div class="col help__col2">
+            <img src="./img/help.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="main myfooter">
+        <div class="myfooter__box1">
+          <img src="img/logo-light.svg" />
+          <ul>
+            <h1>Health Problems</h1>
+            <p>Stroke</p>
+            <p>HIV</p>
+            <p>Depression</p>
+            <p>Heart Disease</p>
+          </ul>
+          <ul>
+            <h1>Quick Link</h1>
+            <p>World Meter</p>
+            <p>WHO Information</p>
+            <p>Health Issues</p>
+            <p>Email: pardeepnain1111@gmail.com</p>
+          </ul>
+          <ul>
+            <h1>Contact Info</h1>
+            <p>🏡 #1385F sector=11, panchkula, India</p>
+            <p>📞 9416521069</p>
+            <p>🗺 India</p>
+            <p>💌 Email: pardeepnain1111@gmail.com</p>
+          </ul>
+        </div>
+        <hr>
+        <h5 class="text-center m-0">Made by : Pardeep kumar | 2024-2025</h5>
+        <hr>
+      </div>
+    </footer>
+    <script src="./javascript/style.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

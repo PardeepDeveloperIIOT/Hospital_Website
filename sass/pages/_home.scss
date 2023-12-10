@@ -1,0 +1,300 @@
+.header_section {
+  @include flex_2_row;
+  .row {
+    width: 90%;
+    @include respond(medium-desktop) {
+      margin: 100px 10px 0px 10px;
+    }
+    .mycol-1 {
+      @include respond(big-desktop) {
+        margin: 0px 20px;
+      }
+      @include respond(small-phone) {
+        margin: 0px 10px;
+        padding: 0;
+      }
+
+      @include flex_1_col;
+      position: relative;
+      h1 {
+        font-size: $header-text-size;
+        color: $color-light-black;
+        @include respond(large-desktop) {
+          $header-text-size: 6rem;
+          font-size: $header-text-size;
+          color: $color-light-black;
+        }
+        @include respond(medium-desktop) {
+          text-align: center;
+        }
+        @include respond(medium-phone) {
+          $header-text-size: 4rem;
+          font-size: $header-text-size;
+        }
+      }
+      p {
+        font-size: $nav-paragraph-size;
+        margin: 4rem 0;
+        width: 80%;
+        text-align: justify;
+        @include respond(large-desktop) {
+          width: 90%;
+        }
+      }
+      .btn_text {
+        @include flex_2_row;
+        button {
+          font-size: $nav-font-size;
+          margin-right: 4rem;
+          padding: 15px 30px;
+          @include respond(small-phone) {
+            margin-right: 1rem;
+            // margin: 0px;
+          }
+        }
+        h4 {
+          color: $color-light-black;
+          font-size: 2.4rem;
+          @include respond(large-desktop) {
+            font-size: 2rem;
+          }
+          @include flex_2_row;
+        }
+      }
+    }
+    .mycol-2 {
+      background-image: url("../../img/a.avif");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      @include respond(medium-desktop) {
+        background-size: contain;
+        text-align: center;
+        margin-top: 50px;
+      }
+      @include respond(small-phone) {
+        margin-top: 0px;
+      }
+      &--img {
+        width: 100%;
+        @include respond(large-desktop) {
+          // width: 60%;
+          display: none;
+        }
+        @include respond(medium-desktop-2) {
+          width: 60%;
+          display: block;
+        }
+        @include respond(small-phone) {
+          width: 90%;
+        }
+        @media (max-width: 971px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.covid_case {
+  font-size: 3rem;
+  background-color: azure;
+  border-radius: 20px;
+  margin-top: 0px;
+  box-shadow: 0px 10px 20px #afacac;
+  @include respond(big-desktop) {
+    margin: 0px 30px;
+  }
+  @include respond(small-phone) {
+    width: 95%;
+    margin: 0px 10px;
+    padding: 0;
+  }
+  @include respond(medium-desktop) {
+    margin-top: 20px;
+  }
+
+  h1 {
+    @include respond(medium-desktop) {
+      font-size: 3rem;
+    }
+    @include respond(small-phone) {
+      font-size: 2rem;
+    }
+  }
+  p {
+    @include respond(medium-desktop) {
+      font-size: 1rem;
+    }
+    @include respond(small-phone) {
+      font-size: 1rem;
+    }
+  }
+}
+
+.covid19_info {
+  .row {
+    &__col-1 {
+      @include respond(large-desktop) {
+        width: 50%;
+        height: 0%;
+        display: flex;
+        justify-content: center;
+        // animation: none;
+      }
+      @include respond(medium-phone) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      img {
+        @include respond(large-desktop) {
+          width: 50%;
+        }
+      }
+    }
+    &__col-2 {
+      @include flex_4_covid_text;
+      padding: 0px 4rem;
+      @include respond(small-phone) {
+        padding: 0px 20px;
+      }
+      h1 {
+        font-size: $covid-card-text-size;
+        @include respond(medium-phone) {
+          $covid-card-text-size: 3.5rem;
+          font-size: $covid-card-text-size;
+        }
+        @include respond(small-phone) {
+          $covid-card-text-size: 3rem;
+          font-size: $covid-card-text-size;
+        }
+      }
+      p {
+        text-align: justify;
+        font-size: $nav-paragraph-size;
+        width: 80%;
+        line-height: 40px;
+        @include respond(big-desktop) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.covid_video {
+  position: relative;
+  @include respond(big-desktop) {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  video {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px black;
+    @include respond(big-desktop) {
+      width: 90%;
+    }
+    @include respond(small-phone) {
+      width: 100%;
+    }
+  }
+  &--img {
+    @include covid_img(-50px, 0px);
+
+    @include respond(big-desktop) {
+      // animation: none;
+    }
+    @include respond(small-phone) {
+      @include covid_img(-50px, 0px);
+    }
+    img {
+      width: 200px;
+      @include respond(big-desktop) {
+        width: 100px;
+      }
+      @include respond(small-phone) {
+        width: 80px;
+      }
+    }
+  }
+}
+
+.covid_spread {
+  background-color: $color-smoke-blue;
+  border-radius: $border-radius;
+  .row {
+    &__col-2 {
+      @include flex_4_covid_text;
+      padding-left: 4rem;
+      @include respond(small-phone) {
+        padding: 0px;
+      }
+      @include respond(big-desktop) {
+        width: 100%;
+      }
+      h1 {
+        font-size: $covid-card-text-size;
+        @include respond(medium-phone) {
+          $covid-card-text-size: 3.5rem;
+          font-size: $covid-card-text-size;
+        }
+        @include respond(small-phone) {
+          $covid-card-text-size: 3rem;
+          font-size: $covid-card-text-size;
+        }
+      }
+      p {
+        text-align: justify;
+        font-size: $nav-paragraph-size;
+        width: 80%;
+        line-height: 40px;
+        @include respond(big-desktop) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.protect {
+  @include respond(big-desktop) {
+    padding: 0px 90px;
+  }
+  @include respond(large-desktop) {
+    margin-top: 50px;
+    padding: 0px 40px;
+  }
+  @include respond(small-phone) {
+    padding: 0px 20px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: $covid-card-text-size;
+    color: $color-light-black;
+    margin-bottom: 20px;
+    @include respond(medium-phone) {
+      $covid-card-text-size: 3.5rem;
+      font-size: $covid-card-text-size;
+    }
+    @include respond(small-phone) {
+      $covid-card-text-size: 3rem;
+      font-size: $covid-card-text-size;
+    }
+  }
+  p {
+    text-align: justify;
+    font-size: $nav-paragraph-size;
+    line-height: 40px;
+    margin-bottom: 50px;
+  }
+}
+
+.footer {
+  background-color: $color-footer;
+  color: white;
+  margin-top: -80px;
+  z-index: -2;
+}

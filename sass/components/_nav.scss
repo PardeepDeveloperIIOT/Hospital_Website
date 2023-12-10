@@ -1,0 +1,31 @@
+.navbar {
+  margin-top: 1.5rem;
+  @include respond(large-desktop) {
+    margin: 10px 20px;
+  }
+  button {
+    padding: 10px 20px;
+    span {
+      font-size: 1.7rem;
+    }
+  }
+  ul {
+    @include respond(large-desktop) {
+      margin-top: 3rem;
+    }
+  }
+  .nav-item {
+    padding: 4px 10px;
+    @include respond(large-desktop) {
+      padding: 10px 10px;
+    }
+    a {
+      font-size: $nav-btn-size;
+      color: $color-light-black;
+      font-weight: bold;
+      &:hover {
+        color: blue;
+      }
+    }
+  }
+}

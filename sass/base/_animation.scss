@@ -1,0 +1,221 @@
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> home
+//-------------- Header
+.header_section {
+  .mycol-1 {
+    h1 {
+      animation: header_section_moveInLeft 1s;
+    }
+    p {
+      animation: header_section_moveInRight 1s;
+    }
+  }
+  .mycol-2 {
+    animation: header_section_img 1s;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+  }
+}
+
+@keyframes header_section_moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes header_section_moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes header_section_img {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+//-------------- covid img rotate
+.rotate_img {
+  transition: all 0.2s ease-in-out;
+  animation: header_section_img_covid 22s linear infinite,
+    header_section_img_covid_color 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes header_section_img_covid {
+  from {
+    rotate: (0deg);
+  }
+  to {
+    rotate: (360deg);
+  }
+}
+@keyframes header_section_img_covid_color {
+  from {
+    filter: invert(220);
+  }
+  to {
+    filter: none;
+  }
+}
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Prevention
+.header_section {
+  .mycol-2-new {
+    animation: header_section_img_prevention 1s;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+  }
+}
+@keyframes header_section_img_prevention {
+  0% {
+    opacity: 0;
+    transform: translateX(-50rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Product
+.medicin_header {
+  .med1 {
+    animation: singke_medicine_3 1s linear infinite alternate;
+  }
+  .med2 {
+    animation: singke_medicine_3 1s linear infinite alternate;
+  }
+  .med3 {
+    animation: singke_medicine_1 1s ease-in-out infinite alternate;
+  }
+  .med4 {
+    animation: singke_medicine_2 5s linear infinite alternate;
+  }
+  &__img {
+    animation: medicin_header_img 0.8s;
+  }
+}
+@keyframes medicin_header_img {
+  0% {
+    opacity: 0;
+    transform: translateY(-50rem);
+  }
+
+  80% {
+    transform: translateY(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes singke_medicine_1 {
+  from {
+    filter: blur(3px);
+  }
+  to {
+    filter: grayscale(20);
+  }
+}
+@keyframes singke_medicine_2 {
+  from {
+    opacity: 0;
+    transform: translate(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(100px);
+  }
+}
+@keyframes singke_medicine_3 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(30deg);
+    scale: 0.7;
+    filter: saturate(100);
+  }
+}
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> contact
+.style_btn {
+  padding: 6px 20px;
+  font-size: $nav-paragraph-size;
+  border-radius: 50px;
+  background-color: $color-footer;
+  color: $color-white;
+  position: relative;
+  @include buttonStyle;
+}
+.style_btn2 {
+  width: 200px;
+  padding: 16px 0px;
+  font-size: $nav-paragraph-size;
+  border-radius: 50px;
+  background-color: $color-footer;
+  color: $color-white;
+  position: relative;
+  @include buttonStyle;
+}
+
+@keyframes button_style {
+  0% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1.1);
+    transform: translateY(-2px);
+  }
+  100% {
+    opacity: 0.2;
+    transform: scale(1.2);
+  }
+}
+
+//------------------------------ cart
+.cartEmpty_logo {
+  animation: emptyCart 1s linear infinite alternate;
+}
+@keyframes emptyCart {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(50px);
+  }
+}

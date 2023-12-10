@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Medicine Product | API</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="preloader"></div>
+    <nav class="main navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/LOGO.svg" /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./prevention.html">Prevention</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./product.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./api.html">Covid-API</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Contact</a>
+            </li>
+            <li class="nav-item cartLogo">
+              <a class="position-relative" href="./cart.html"
+                ><span
+                  class="position-absolute -top-9 start-100 translate-middle badge rounded-pill bg-danger cart_Add_Product_count"
+                >
+                  0
+                  <span class="visually-hidden">unread messages</span> </span
+                ><img src="./img/logo.png" alt=""
+              /></a>
+            </li>
+            <li class="nav-item">
+              <button style="cursor: not-allowed" class="style_btn">
+                Emergency Call
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="all_section_margin">
+      <div class="main contact">
+        <div class="row">
+          <div class="col col11">
+            <form>
+              <h1 class="text-white">Contact Now</h1>
+              <input type="text" placeholder="Full Name" required />
+              <input type="text" placeholder="Email Address" required />
+              <textarea
+                required
+                rows="6"
+                cols=""
+                placeholder=" write down health problems"
+              ></textarea>
+              <button type="submit" class="style_btn2">Submit</button>
+            </form>
+          </div>
+          <div class="col"></div>
+        </div>
+      </div>
+    </section>
+    <div class="main">
+      <div class="protect">
+        <h4 class="text-primary text-center">ABOUT COVID-19</h4>
+        <h1>Take steps to protect yourself</h1>
+        <p>
+          Nec habitasse sociis urna urna dignissim et ac parturient sed mi
+          ultricies porttitor ligula eu elementum arcu leo, cum tellus
+          suspendisse dignissim habitant pellentesque.Nec habitasse sociis urna
+          urna dignissim et ac parturient sed mi ultricies porttitor ligula eu
+          elementum arcu leo, cum tellus suspendisse dignissim.
+        </p>
+      </div>
+    </div>
+    <section class="main">
+      <div class="help">
+        <div class="row">
+          <div class="col help__col1">
+            <h4 class="text-primary">NEED HELP?</h4>
+            <h1>We are here to help.</h1>
+            <p>Vitae, vulputate lorem id egestas neque egestas.</p>
+            <button class="all-btn">Contact us now</button>
+          </div>
+          <div class="col help__col2">
+            <img src="./img/help.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="main myfooter">
+        <div class="myfooter__box1">
+          <img src="img/logo-light.svg" />
+          <ul>
+            <h1>Health Problems</h1>
+            <p>Stroke</p>
+            <p>HIV</p>
+            <p>Depression</p>
+            <p>Heart Disease</p>
+          </ul>
+          <ul>
+            <h1>Quick Link</h1>
+            <p>World Meter</p>
+            <p>WHO Information</p>
+            <p>Health Issues</p>
+            <p>Email: pardeepnain1111@gmail.com</p>
+          </ul>
+          <ul>
+            <h1>Contact Info</h1>
+            <p>🏡 #1385F sector=11, panchkula, India</p>
+            <p>📞 9416521069</p>
+            <p>🗺 India</p>
+            <p>💌 Email: pardeepnain1111@gmail.com</p>
+          </ul>
+        </div>
+        <hr />
+        <h5 class="text-center m-0 pb-3">
+          Made by : Pardeep kumar | 2024-2025
+        </h5>
+      </div>
+    </footer>
+    <script src="./javascript/style.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+.hide {
+  display: none;
+}
+.active {
+  color: red !important;
+}
+.blur {
+  filter: blur(5px);
+}
+#preloader {
+  background: #ecf0f1 url(../../img/loader.gif) no-repeat center center;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -15px;
+  padding: 0;
+}

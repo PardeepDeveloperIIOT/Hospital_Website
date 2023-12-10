@@ -1,0 +1,20 @@
+{
+  "name": "hospital_website",
+  "version": "1.0.0",
+  "description": "complete_website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "live:server": "live-server",
+    "start": "npm-run-all --parallel live:server compile:sass"
+  },
+  "author": "pardeep",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "gh-pages": "^6.1.0"
+  }
+}

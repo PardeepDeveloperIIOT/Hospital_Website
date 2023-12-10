@@ -1,0 +1,59 @@
+.row_col__products {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  .card {
+    transition: all 0.3s ease-in-out;
+    border-radius: $border-radius;
+    box-shadow: 0px 3px 3px $color-footer;
+    img {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+    h5 {
+      font-size: $nav-card-heading-prevent;
+      color: $color-light-black;
+      @include respond(extra-small-phone) {
+        font-size: 3rem;
+      }
+    }
+    p {
+      font-size: $nav-paragraph-size;
+    }
+    .rupies {
+      font-size: $nav-btn-size;
+      span {
+        @extend .rupies;
+      }
+    }
+    .btn_increment,
+    .btn_inc_dec_rs,
+    .btn_decrement {
+      font-size: $nav-btn-size;
+      width: 50px;
+      border-radius: 50px;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0px 5px 5px #dbd9d9;
+      &:hover {
+        transform: translateY(2px);
+        box-shadow: 0px 3px 3px #333;
+      }
+    }
+    .showmebtn {
+      margin-left: 10px;
+      font-size: $nav-btn-size;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0px 5px 5px #bbbaba;
+      &:hover {
+        transform: translateY(2px);
+        box-shadow: 0px 2px 2px #333;
+      }
+    }
+    .add-cart-main-all {
+      @extend .showmebtn;
+    }
+    &:hover {
+      box-shadow: 0px 0px 0px #333;
+    }
+  }
+}
