@@ -1354,7 +1354,7 @@ body {
 }
 .medicin_container__outstyle2 {
   clip-path: circle(50% at 50% 50%);
-  background-image: url("../../img/doctor.jpg");
+  background-image: url("../img/doctor.jpg");
   background-position: left;
   background-size: cover;
   width: 150px;
