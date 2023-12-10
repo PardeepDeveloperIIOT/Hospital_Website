@@ -38,7 +38,7 @@
         rgba(255, 255, 255, 0.4),
         rgba(20, 115, 183, 0.7)
       ),
-      url("/HTML_CSS_projects/Project_5_Hospital_Complete_Website/img/logo-product.png");
+      url("../img/logo-product.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -59,7 +59,7 @@
   position: relative;
   &__outstyle2 {
     clip-path: circle(50% at 50% 50%);
-    background-image: url("../../img/doctor.jpg");
+    background-image: url("../img/doctor.jpg");
     background-position: left;
     background-size: cover;
     width: 150px;
